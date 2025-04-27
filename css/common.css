@@ -138,8 +138,6 @@ table {
   border-spacing: 0;
 }
 
-/* Task-1 */
-/* Task-2 */
 .gallery {
   max-width: 1128px;
   display: flex;
@@ -164,11 +162,17 @@ table {
   object-fit: cover;
 }
 
-/* Task-3 */
-#name-input {
+input {
   width: 360px;
   height: 40px;
-  margin: 24px;
+  outline: none;
+  border: 1px solid #808080;
+  border-radius: 4px;
+}
+
+input:hover,
+input:focus {
+  border-color: #000;
 }
 
 h1 {
@@ -179,4 +183,42 @@ h1 {
   letter-spacing: 0.04em;
   color: #2e2f42;
   margin: 24px;
+}
+
+.login-form {
+  max-width: 408px;
+  padding: 24px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  margin-bottom: 8px;
+}
+
+button {
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 86px;
+  height: 40px;
+  background-color: #4e75ff;
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  margin-top: 8px;
+}
+button:hover {
+  background-color: #6c8cff;
 }
